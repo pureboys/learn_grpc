@@ -1,0 +1,6 @@
+{
+    "require": {
+        "google/protobuf": "^3.7",
+        "grpc/grpc": "^1.19"
+    }
+}
