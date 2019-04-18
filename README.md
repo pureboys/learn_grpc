@@ -74,13 +74,22 @@ $ composer require grpc/grpc
 ```
 $ protoc --proto_path=./ --php_out=./ --grpc_out=./ --plugin=protoc-gen-grpc=/usr/local/bin/grpc_php_plugin ./helloworld.proto
 #执行成功之后可以看到生成生成以下文件
-#Lisa/GreeterClient.php  
-#Lisa/LisaReply.php  
-#Lisa/LisaRequest.php
-#GPBMetadata/Lisa.php
+#Helloworld/GreeterClient.php  
+#Helloworld/HelloReply.php  
+#Helloworld/HelloRequest.php
+#GPBMetadata/Helloworld.php
 ```
 
 ### 开机服务端， 使用客户端调用
+````
+# 服务端
+cd server/
+go run main.go
+# 客户端
+cd php_client
+php php_client.php 运行查看结果
+
+````
 
 
 
